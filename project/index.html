@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centro Odontológico Dental San Cristobal S.R.L.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+</head>
+  <body>
+    <div id="app">
+      <div class="bg-overlay"></div>
+
+      <div id="login-page" class="login-card">
+        <div class="deco deco-tl">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 45C10 25 25 10 45 10" stroke="#d0e8fb" stroke-width="18" stroke-linecap="round" fill="none"/>
+            <path d="M30 70C18 62 10 52 10 45" stroke="#b8dcf8" stroke-width="14" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="deco deco-tr">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 20 L20 0 L40 20 L20 40 Z" fill="#d0e8fb"/>
+            <path d="M40 50 L55 35 L70 50 L55 65 Z" fill="#b8dcf8" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="deco deco-bl">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 20 L20 0 L40 20 L20 40 Z" fill="#d0e8fb"/>
+            <path d="M40 50 L55 35 L70 50 L55 65 Z" fill="#b8dcf8" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="deco deco-br">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45 80C65 80 80 65 80 45" stroke="#d0e8fb" stroke-width="18" stroke-linecap="round" fill="none"/>
+            <path d="M60 20C72 28 80 38 80 45" stroke="#b8dcf8" stroke-width="14" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="card-inner">
+          <div class="logo-section">
+            <div class="tooth-icon">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                <circle cx="40" cy="40" r="38" fill="#1a7fe8"/>
+                <path d="M26 22c-4.5 0-10.5 4-10.5 14.5 0 6.5 2 10.5 4 14.5 1.6 3.2 3.2 5.5 5.5 5.5s2.8-2.4 3.2-5.5l1.2-6.5 1.2 6.5c.4 3.2 1.2 5.5 3.2 5.5s4-2.4 5.5-5.5c2-4 4-8 4-14.5 0-10.5-6-14.5-10.5-14.5-2 0-4 1-5.2 2C27.2 23 25 22 26 22z" fill="white"/>
+                <path d="M28 21.5c0 0 2.5-3.2 5 0" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">CENTRO ODONTOLÓGICO</span>
+              <span class="logo-subtitle">DENTAL SAN CRISTOBAL S.R.L.</span>
+            </div>
+          </div>
+
+          <h1 class="heading">Iniciar Sesión</h1>
+
+          <form id="login-form" novalidate>
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <input type="email" id="email" placeholder="Correo Electrónico o Usuario" autocomplete="email" required />
+            </div>
+
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <input type="password" id="password" placeholder="Contraseña" autocomplete="current-password" required />
+              <button type="button" id="toggle-password" class="eye-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ab8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+
+            <div class="forgot-wrap">
+              <a href="#" id="forgot-password" class="forgot-link">Olvidé mi contraseña</a>
+            </div>
+
+            <p id="error-msg" class="error-msg"></p>
+
+            <button type="submit" id="login-btn" class="login-btn">INICIAR SESIÓN</button>
+
+            <div class="remember-wrap">
+              <label class="remember-label">
+                <input type="checkbox" id="remember-me" />
+                <span class="custom-check"></span>
+                Recordarme en este dispositivo
+              </label>
+            </div>
+
+            <p class="register-text">
+              ¿No tienes cuenta? <a href="#" id="register-link" class="register-link">Regístrate aquí</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div id="register-page" class="login-card" style="display: none;">
+        <div class="deco deco-tl">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M10 45C10 25 25 10 45 10" stroke="#d0e8fb" stroke-width="18" stroke-linecap="round" fill="none"/>
+            <path d="M30 70C18 62 10 52 10 45" stroke="#b8dcf8" stroke-width="14" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div class="deco deco-tr">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 20 L20 0 L40 20 L20 40 Z" fill="#d0e8fb"/>
+            <path d="M40 50 L55 35 L70 50 L55 65 Z" fill="#b8dcf8" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="deco deco-bl">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 20 L20 0 L40 20 L20 40 Z" fill="#d0e8fb"/>
+            <path d="M40 50 L55 35 L70 50 L55 65 Z" fill="#b8dcf8" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="deco deco-br">
+          <svg viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M45 80C65 80 80 65 80 45" stroke="#d0e8fb" stroke-width="18" stroke-linecap="round" fill="none"/>
+            <path d="M60 20C72 28 80 38 80 45" stroke="#b8dcf8" stroke-width="14" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+
+        <div class="card-inner">
+          <div class="logo-section">
+            <div class="tooth-icon">
+              <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="72" height="72">
+                <circle cx="40" cy="40" r="38" fill="#1a7fe8"/>
+                <path d="M26 22c-4.5 0-10.5 4-10.5 14.5 0 6.5 2 10.5 4 14.5 1.6 3.2 3.2 5.5 5.5 5.5s2.8-2.4 3.2-5.5l1.2-6.5 1.2 6.5c.4 3.2 1.2 5.5 3.2 5.5s4-2.4 5.5-5.5c2-4 4-8 4-14.5 0-10.5-6-14.5-10.5-14.5-2 0-4 1-5.2 2C27.2 23 25 22 26 22z" fill="white"/>
+                <path d="M28 21.5c0 0 2.5-3.2 5 0" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-title">CENTRO ODONTOLÓGICO</span>
+              <span class="logo-subtitle">DENTAL SAN CRISTOBAL S.R.L.</span>
+            </div>
+          </div>
+
+          <h1 class="heading">Crear Cuenta</h1>
+
+          <form id="register-form" novalidate>
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </span>
+              <input type="text" id="name" placeholder="Nombre Completo" required />
+            </div>
+
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <input type="email" id="email-register" placeholder="Correo Electrónico" autocomplete="email" required />
+            </div>
+
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <input type="password" id="password-register" placeholder="Contraseña" autocomplete="new-password" required />
+              <button type="button" id="toggle-password-register" class="eye-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ab8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+
+            <div class="input-group">
+              <span class="input-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#6b9fd4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </span>
+              <input type="password" id="confirm-password" placeholder="Confirmar Contraseña" autocomplete="new-password" required />
+              <button type="button" id="toggle-confirm-password" class="eye-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#9ab8d4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+
+            <p id="error-msg-register" class="error-msg"></p>
+
+            <button type="submit" id="register-btn" class="login-btn">REGISTRARSE</button>
+
+            <p class="register-text">
+              ¿Ya tienes cuenta? <a href="#" id="back-to-login" class="register-link">Volver al inicio de sesión</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
